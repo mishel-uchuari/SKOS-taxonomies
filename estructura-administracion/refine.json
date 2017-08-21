@@ -1,0 +1,15 @@
+[
+  {
+    "op": "core/column-addition",
+    "description": "Create column LEVEL1-cast-urified at index 1 based on column LEVEL1-cast using expression grel:replace(toLowercase(value),\" \", \"-\")",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "LEVEL1-cast-urified",
+    "columnInsertIndex": 1,
+    "baseColumnName": "LEVEL1-cast",
+    "expression": "grel:replace(toLowercase(value),\" \", \"-\")",
+    "onError": "set-to-blank"
+  }
+]
