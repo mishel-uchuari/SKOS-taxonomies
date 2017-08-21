@@ -1,0 +1,13 @@
+toLowercase(
+  replace(
+    replace(
+      replace(
+        replace(
+          value," ","-"
+          ),",","-"
+        )
+      ,"ó","o"
+    )
+    ,"ú","u"
+  )
+)
